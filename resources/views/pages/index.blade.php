@@ -6,7 +6,7 @@
         </h1>
 
         @volt
-        <div class="flex flex-col gap-6 mt-20">
+        <div class="flex flex-col gap-6 mt-20" wire:poll>
         @foreach ($challengers as $challenger)
             <div wire:key="challenger-{{ $challenger->id }}">
                 <h2 class="text-2xl mb-6">{{ $challenger->name }}</h2>
